@@ -1,4 +1,13 @@
 import styled from 'styled-components';
+import { Link } from '@reach/router';
+
+export const LinkRouter = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  width: 75px;
+`;
 
 export const Anchor = styled.a`
   display: flex;
