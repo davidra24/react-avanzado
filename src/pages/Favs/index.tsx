@@ -1,11 +1,16 @@
 import React from 'react';
 import { GetFavorites } from '../../containers/GetFavorites';
+import { Layout } from '../../components/Layout';
 
-export const Favs = () => {
+export default () => {
   return (
     <>
-      <h1>Favoritos</h1>
-      <GetFavorites />
+      <Layout
+        title='Tus favoritos'
+        subtitle='Con Petgram puedes encontrar tus favoritos'
+      >
+        <GetFavorites />
+      </Layout>
     </>
   );
 };
